@@ -1,0 +1,19 @@
+.website-recaptcha-v2-container {
+    clear: both;
+    min-height: 78px;
+    margin: 0 0 1rem;
+    max-width: 304px;
+}
+
+.website-recaptcha-v2-error {
+    margin-top: .5rem;
+}
+
+@media (max-width: 360px) {
+    .website-recaptcha-v2-container {
+        transform-origin: left top;
+        transform: scale(.9);
+        width: 338px;
+        margin-bottom: -8px;
+    }
+}

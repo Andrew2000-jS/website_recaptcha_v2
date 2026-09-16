@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.website.recaptcha.v2</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app name="website_recaptcha_v2" string="Website reCAPTCHA v2">
+                    <block title="Google reCAPTCHA v2 checkbox">
+                        <setting string="Protection" help="Fail closed on supported public forms when enabled.">
+                            <field name="website_recaptcha_v2_enabled"/>
+                        </setting>
+                        <setting string="Site Key" help="The public site key from Google reCAPTCHA. Use a v2 checkbox key.">
+                            <field name="website_recaptcha_v2_site_key"/>
+                        </setting>
+                        <setting string="Secret Key" help="Stored server-side and never sent to the browser.">
+                            <field name="website_recaptcha_v2_secret_key" password="True"/>
+                        </setting>
+                        <setting string="Failure Message" help="Shown when the checkbox is missing or verification fails.">
+                            <field name="website_recaptcha_v2_failure_message"/>
+                        </setting>
+                        <div class="text-muted">
+                            Create a Google key of type Challenge (v2) checkbox, not score (v3).
+                        </div>
+                        <a href="https://www.google.com/recaptcha/admin/create" target="_blank" class="oe_link">
+                            <i class="oi oi-arrow-right"/> Open Google reCAPTCHA administration
+                        </a>
+                    </block>
+                </app>
+            </xpath>
+        </field>
+    </record>
+</odoo>

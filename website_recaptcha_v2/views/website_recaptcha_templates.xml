@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="frontend_layout_recaptcha_config" inherit_id="web.layout">
+        <xpath expr="//head" position="inside">
+            <meta
+                name="website-recaptcha-v2"
+                t-if="request.env['ir.config_parameter'].sudo().get_param('website_recaptcha_v2.enabled') in ('1', 'True', 'true', 'yes')"
+                t-att-content="request.env['ir.config_parameter'].sudo().get_param('website_recaptcha_v2.site_key') or ''"
+                t-att-data-error-message="request.env['ir.config_parameter'].sudo().get_param('website_recaptcha_v2.failure_message') or 'Please complete the reCAPTCHA challenge and try again.'"
+            />
+        </xpath>
+    </template>
+
+    <template id="website_form_recaptcha" inherit_id="website.s_website_form">
+        <xpath expr="//form" position="attributes">
+            <attribute name="data-website-recaptcha-v2-form">1</attribute>
+        </xpath>
+        <xpath expr="//div[contains(@class, 's_website_form_submit')]" position="after">
+            <div class="website-recaptcha-v2-container" data-website-recaptcha-v2-widget="1"/>
+        </xpath>
+    </template>
+
+    <template id="login_recaptcha" inherit_id="web.login">
+        <xpath expr="//form[@onsubmit]" position="inside">
+            <div
+                class="website-recaptcha-v2-container"
+                data-website-recaptcha-v2-widget="1"
+                t-if="request.env['ir.config_parameter'].sudo().get_param('website_recaptcha_v2.enabled') in ('1', 'True', 'true', 'yes')"
+            />
+        </xpath>
+    </template>
+
+    <template id="signup_recaptcha" inherit_id="auth_signup.signup">
+        <xpath expr="//form[hasclass('oe_signup_form')]" position="inside">
+            <div
+                class="website-recaptcha-v2-container"
+                data-website-recaptcha-v2-widget="1"
+                t-if="request.env['ir.config_parameter'].sudo().get_param('website_recaptcha_v2.enabled') in ('1', 'True', 'true', 'yes')"
+            />
+        </xpath>
+    </template>
+
+    <template id="reset_password_recaptcha" inherit_id="auth_signup.reset_password">
+        <xpath expr="//form[hasclass('oe_reset_password_form')]" position="inside">
+            <div
+                class="website-recaptcha-v2-container"
+                data-website-recaptcha-v2-widget="1"
+                t-if="request.env['ir.config_parameter'].sudo().get_param('website_recaptcha_v2.enabled') in ('1', 'True', 'true', 'yes')"
+            />
+        </xpath>
+    </template>
+
+    <template id="website_sale_address_recaptcha" inherit_id="website_sale.address">
+        <xpath expr="//form[@action='/shop/address/submit']" position="attributes">
+            <attribute name="data-website-recaptcha-v2-form">1</attribute>
+        </xpath>
+        <xpath expr="//form[@action='/shop/address/submit']" position="inside">
+            <div class="website-recaptcha-v2-container" data-website-recaptcha-v2-widget="1"/>
+        </xpath>
+    </template>
+</odoo>
