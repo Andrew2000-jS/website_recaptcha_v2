@@ -2,6 +2,12 @@
 
 This standalone Odoo 18 addon protects supported public website submissions with Google's legacy reCAPTCHA v2 checkbox. It does not contain or depend on Singer business logic.
 
+## Author and license
+
+Developed by [Andrés Arévalo](https://github.com/Andrew2000-jS).
+
+This module is proprietary software. All rights are reserved. See [LICENSE](LICENSE) for the applicable terms.
+
 ## Installation
 
 1. Add `website_recaptcha_v2` to the Odoo addons path.

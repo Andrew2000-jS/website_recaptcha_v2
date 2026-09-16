@@ -4,7 +4,8 @@
     "version": "18.0.1.0.0",
     "category": "Website/Website",
     "author": "Andrés Arévalo",
-    "license": "LGPL-3",
+    "website": "https://github.com/Andrew2000-jS",
+    "license": "Other proprietary",
     "depends": ["website", "website_sale", "google_recaptcha"],
     "data": [
         "views/res_config_settings_views.xml",
