@@ -1,0 +1,100 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_recaptcha_v2
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 21:20+0000\n"
+"PO-Revision-Date: 2026-09-16 21:20+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: website_recaptcha_v2
+#: model_terms:ir.ui.view,arch_db:website_recaptcha_v2.res_config_settings_view_form
+msgid "<i class=\"oi oi-arrow-right\"/> Open Google reCAPTCHA administration"
+msgstr "<i class=\"oi oi-arrow-right\"/> Abrir la administración de Google reCAPTCHA"
+
+#. module: website_recaptcha_v2
+#: model:ir.model,name:website_recaptcha_v2.model_res_config_settings
+msgid "Config Settings"
+msgstr "Ajustes de configuración"
+
+#. module: website_recaptcha_v2
+#: model_terms:ir.ui.view,arch_db:website_recaptcha_v2.res_config_settings_view_form
+msgid "Create a Google key of type Challenge (v2) checkbox, not score (v3)."
+msgstr "Cree una clave de Google de tipo desafío (v2) con casilla de verificación, no de puntuación (v3)."
+
+#. module: website_recaptcha_v2
+#: model:ir.model.fields,field_description:website_recaptcha_v2.field_res_config_settings__website_recaptcha_v2_enabled
+msgid "Enable Google reCAPTCHA v2"
+msgstr ""
+
+#. module: website_recaptcha_v2
+#: model_terms:ir.ui.view,arch_db:website_recaptcha_v2.res_config_settings_view_form
+msgid "Fail closed on supported public forms when enabled."
+msgstr "Impide el envío de los formularios públicos compatibles cuando está habilitado."
+
+#. module: website_recaptcha_v2
+#: model:ir.model.fields,field_description:website_recaptcha_v2.field_res_config_settings__website_recaptcha_v2_failure_message
+#: model_terms:ir.ui.view,arch_db:website_recaptcha_v2.res_config_settings_view_form
+msgid "Failure Message"
+msgstr "Mensaje de error"
+
+#. module: website_recaptcha_v2
+#: model_terms:ir.ui.view,arch_db:website_recaptcha_v2.res_config_settings_view_form
+msgid "Google reCAPTCHA v2 checkbox"
+msgstr "Casilla de verificación de Google reCAPTCHA v2"
+
+#. module: website_recaptcha_v2
+#: model:ir.model,name:website_recaptcha_v2.model_ir_http
+msgid "HTTP Routing"
+msgstr "Enrutamiento HTTP"
+
+#. module: website_recaptcha_v2
+#. odoo-javascript
+#: code:addons/website_recaptcha_v2/static/src/js/recaptcha.js:0
+msgid "Please complete the reCAPTCHA challenge and try again."
+msgstr ""
+
+#. module: website_recaptcha_v2
+#: model_terms:ir.ui.view,arch_db:website_recaptcha_v2.res_config_settings_view_form
+msgid "Protection"
+msgstr "Protección"
+
+#. module: website_recaptcha_v2
+#: model:ir.model.fields,field_description:website_recaptcha_v2.field_res_config_settings__website_recaptcha_v2_secret_key
+#: model_terms:ir.ui.view,arch_db:website_recaptcha_v2.res_config_settings_view_form
+msgid "Secret Key"
+msgstr "Clave secreta"
+
+#. module: website_recaptcha_v2
+#: model_terms:ir.ui.view,arch_db:website_recaptcha_v2.res_config_settings_view_form
+msgid "Shown when the checkbox is missing or verification fails."
+msgstr "Se muestra cuando falta la casilla de verificación o falla la verificación."
+
+#. module: website_recaptcha_v2
+#: model:ir.model.fields,field_description:website_recaptcha_v2.field_res_config_settings__website_recaptcha_v2_site_key
+#: model_terms:ir.ui.view,arch_db:website_recaptcha_v2.res_config_settings_view_form
+msgid "Site Key"
+msgstr "Clave del sitio"
+
+#. module: website_recaptcha_v2
+#: model_terms:ir.ui.view,arch_db:website_recaptcha_v2.res_config_settings_view_form
+msgid "Stored server-side and never sent to the browser."
+msgstr "Se almacena en el servidor y nunca se envía al navegador."
+
+#. module: website_recaptcha_v2
+#: model_terms:ir.ui.view,arch_db:website_recaptcha_v2.res_config_settings_view_form
+msgid "The public site key from Google reCAPTCHA. Use a v2 checkbox key."
+msgstr "La clave pública del sitio de Google reCAPTCHA. Use una clave de casilla de verificación v2."
+
+#. module: website_recaptcha_v2
+#: model_terms:ir.ui.view,arch_db:website_recaptcha_v2.res_config_settings_view_form
+msgid "Website reCAPTCHA v2"
+msgstr "reCAPTCHA v2 para sitios web"
